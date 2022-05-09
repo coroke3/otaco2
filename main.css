@@ -156,9 +156,11 @@ body {
     font-style: normal;
     font-size: 2rem;
     z-index: -1;
+    transition: all 0.2s;
 }
 
 #en {
+    position: relative;
     color: #fff;
     text-decoration: none;
     font-family: source-han-sans-japanese, sans-serif;
@@ -169,14 +171,19 @@ body {
     transform: scale(0.9, 1);
     text-decoration: none;
     z-index: 2;
-}
-
-.m9L:hover #ja {
-    color: rgb(255, 255, 255);
+    transition: all 0.2s;
 }
 
 .m9L:hover #en {
     color: rgb(0, 0, 0);
+    right: 20px;
+    transition: all 0.2s;
+}
+
+.m9L:hover #ja {
+    color: rgb(255, 255, 255);
+    left: 0px;
+    transition: all 0.2s;
 }
 
 big {
