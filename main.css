@@ -52,17 +52,11 @@ body {
 
 .m2 {
     position: absolute;
-    z-index: 0;
+    z-index: 11;
     top: -7px;
     left: 0;
-    width: 260px;
     height: 100%;
-    font-family: "Anton", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    writing-mode: vertical-rl;
-    font-size: 25vh;
-    letter-spacing: -19px;
+    transition: all 0.5s;
 }
 
 .m3 {
@@ -71,14 +65,25 @@ body {
     left: 230px;
     top: 35px;
     z-index: 10;
+    transition: all 0.5s;
 }
 
 .m4 {
     position: absolute;
     width: 240px;
-    left: 105px;
-    top: 35px;
-    z-index: -1;
+    left: -120px;
+    top: 0px;
+    z-index: -2;
+    transition: all 0.5s;
+}
+
+.m3:hover {
+    width: 290px;
+}
+
+.m3:hover .m4 {
+    width: 290px;
+    left: -160px;
 }
 
 .m5 {
@@ -109,6 +114,12 @@ body {
     left: 410px;
     top: 380px;
     z-index: 3;
+    transition: all 0.5s;
+}
+
+.m7:hover {
+    width: 100px;
+    height: 100px;
 }
 
 .m8 {
@@ -119,6 +130,12 @@ body {
     top: 145px;
     z-index: 3;
     background-color: rgb(0, 0, 0);
+    transition: all 0.5s;
+}
+
+.m8:hover {
+    width: 270px;
+    height: 270px;
 }
 
 .m9 {
@@ -176,13 +193,11 @@ body {
 
 .m9L:hover #en {
     color: rgb(0, 0, 0);
-    right: 20px;
     transition: all 0.2s;
 }
 
 .m9L:hover #ja {
     color: rgb(255, 255, 255);
-    left: 0px;
     transition: all 0.2s;
 }
 
